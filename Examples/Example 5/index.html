@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<style>
+
+</style>
+<body>
+  <ul>
+    <li><a href="#" id="ar" onclick="dd(this.id)">عربي</a> </li>
+    <li><a href="#" id="en" onclick="dd(this.id)">انجلش</a></li>
+  </ul>
+  <inc src="stert.html" type="html"></inc>
+  <p html="ww"></p>
+  <div $lang="div1"></div>
+  <span $lang="span"></span>
+  <br>
+  <div $lang="div"></div>
+
+  <script src="solm.min.js"></script>
+<script>
+function dd(params) {
+ new solm().cooklang(params)
+}
+
+  new solm().lang({
+    div1:"اسلام",
+    span:"اختبار",
+    div : "watwaet",
+    araw: "24524",
+    data:function() {
+      new solm().css("body",{
+        direction:"rtl"
+      })
+   }
+  },{
+    div1:"eslam",
+    span:"test",
+    div : "es",
+
+    data: function () {
+      new solm().css("body",{
+        direction:"ltr"
+      })
+    }
+  },"en")
+ 
+
+
+      
+</script>
+</body>
+
+</html>

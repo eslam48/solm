@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<style>
+
+</style>
+<body>
+
+  <p>test</p>
+  <div>click</div>
+  <script src="solm.min.js"></script>
+<script>
+new solm({
+  el:"div"
+}).on("click",function () {
+  new solm().css("div,p",{
+        "color":"red",
+      },true)
+})
+  
+      
+      
+</script>
+</body>
+
+</html>
